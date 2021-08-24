@@ -8,10 +8,18 @@ public class LinkedListRunner {
 		MyNode<Integer> myThirdNode = new MyNode<Integer>(56);
 		
 		MyLinkedList linkedlist = new MyLinkedList();
-				
-		linkedlist.add(myFirstNode);
+		
+		//add method
+	/*	linkedlist.add(myFirstNode);
 		linkedlist.add(mySecondNode);
 		linkedlist.add(myThirdNode);
+		
+		linkedlist.printLinkedList();*/
+		
+		//append method
+		linkedlist.append(myThirdNode);
+		linkedlist.append(mySecondNode);
+		linkedlist.append(myFirstNode);
 		
 		linkedlist.printLinkedList();
 	}
