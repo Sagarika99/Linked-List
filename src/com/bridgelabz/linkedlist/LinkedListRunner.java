@@ -15,7 +15,7 @@ public class LinkedListRunner {
 		linkedlist.append(myFirstNode);
 		
 		//pop last element
-		linkedlist.popLast();
+		linkedlist.search(30);
 		linkedlist.printLinkedList();
 		
 		

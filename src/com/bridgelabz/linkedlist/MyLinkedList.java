@@ -1,6 +1,6 @@
 package com.bridgelabz.linkedlist;
 
-public class MyLinkedList {
+public class MyLinkedList <K>{
 
 	private INode head;
 	private INode tail;
@@ -55,6 +55,17 @@ public class MyLinkedList {
 		}
 		this.tail = tempNode;
 		tempNode.setNext(null);
+	}
+	
+	public void search(K key) {
+		INode tempNode = this.head;
+		while (tempNode != tail) {
+			if(tempNode.getKey() == key) {
+				System.out.println(key+ " is present ");
+				break;
+			}
+			tempNode = tempNode.getNext();
+		}
 	}
 	
 	public void printLinkedList() {
