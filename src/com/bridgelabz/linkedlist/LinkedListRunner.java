@@ -10,17 +10,21 @@ public class LinkedListRunner {
 		MyLinkedList linkedlist = new MyLinkedList();
 		
 		//add method
-	/*	linkedlist.add(myFirstNode);
+		/*linkedlist.add(myFirstNode);
 		linkedlist.add(mySecondNode);
 		linkedlist.add(myThirdNode);
-		
-		linkedlist.printLinkedList();*/
+		//linkedlist.printLinkedList();
 		
 		//append method
 		linkedlist.append(myThirdNode);
 		linkedlist.append(mySecondNode);
 		linkedlist.append(myFirstNode);
+		//linkedlist.printLinkedList();*/
 		
+		//insert nethod
+		linkedlist.append(myThirdNode);
+		linkedlist.append(myFirstNode);
+		linkedlist.insert(mySecondNode);
 		linkedlist.printLinkedList();
 	}
 }
