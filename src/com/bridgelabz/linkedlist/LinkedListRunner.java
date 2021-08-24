@@ -9,23 +9,15 @@ public class LinkedListRunner {
 		
 		MyLinkedList linkedlist = new MyLinkedList();
 		
-		/*add method
-		linkedlist.add(myFirstNode);
-		linkedlist.add(mySecondNode);
-		linkedlist.add(myThirdNode);*/
-		
 		//append method
 		linkedlist.append(myThirdNode);
 		linkedlist.append(mySecondNode);
 		linkedlist.append(myFirstNode);
 		
-		/*insert method
-		linkedlist.append(myThirdNode);
-		linkedlist.append(myFirstNode);
-		linkedlist.insert(mySecondNode);*/
-		
-		//pop first element
-		linkedlist.popFirst();
+		//pop last element
+		linkedlist.popLast();
 		linkedlist.printLinkedList();
+		
+		
 	}
 }
