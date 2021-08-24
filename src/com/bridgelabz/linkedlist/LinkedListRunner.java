@@ -6,6 +6,7 @@ public class LinkedListRunner {
 		MyNode<Integer> myFirstNode = new MyNode<Integer>(70);
 		MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
 		MyNode<Integer> myThirdNode = new MyNode<Integer>(56);
+		MyNode<Integer> myFourthNode = new MyNode<Integer>(40);
 		
 		MyLinkedList linkedlist = new MyLinkedList();
 		
@@ -15,7 +16,7 @@ public class LinkedListRunner {
 		linkedlist.append(myFirstNode);
 		
 		//pop last element
-		linkedlist.search(30);
+		linkedlist.insertElementInBetween(mySecondNode,myFourthNode);
 		linkedlist.printLinkedList();
 		
 		

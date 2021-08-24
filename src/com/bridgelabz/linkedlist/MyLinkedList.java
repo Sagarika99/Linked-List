@@ -68,6 +68,17 @@ public class MyLinkedList <K>{
 		}
 	}
 	
+	public void insertElementInBetween(INode findNode,INode newNode) {
+		INode tempNode = this.head;
+		while (tempNode != tail) {
+			if(tempNode.getKey().equals(findNode.getKey())) {
+				tempNode.setNext(newNode);
+				newNode.setNext(this.tail);
+			}
+			tempNode = tempNode.getNext();
+		}
+	}
+	
 	public void printLinkedList() {
 		StringBuffer printformat = new StringBuffer("My Nodes: ");
 		INode tempNode = head;
