@@ -16,7 +16,9 @@ public class LinkedListRunner {
 		linkedlist.append(myFirstNode);
 		
 		//pop last element
-		linkedlist.insertElementInBetween(mySecondNode,myFourthNode);
+		//linkedlist.insertElementInBetween(mySecondNode,myFourthNode);
+		linkedlist.deleteElementInBetween(40);
+		
 		linkedlist.printLinkedList();
 		
 		

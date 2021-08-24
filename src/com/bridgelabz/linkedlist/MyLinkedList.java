@@ -62,7 +62,6 @@ public class MyLinkedList <K>{
 		while (tempNode != tail) {
 			if(tempNode.getKey() == key) {
 				System.out.println(key+ " is present ");
-				break;
 			}
 			tempNode = tempNode.getNext();
 		}
@@ -74,6 +73,16 @@ public class MyLinkedList <K>{
 			if(tempNode.getKey().equals(findNode.getKey())) {
 				tempNode.setNext(newNode);
 				newNode.setNext(this.tail);
+			}
+			tempNode = tempNode.getNext();
+		}
+	}
+	
+	public void deleteElementInBetween(K key) {
+		INode tempNode = this.head;
+		while (tempNode.getNext() != tail) {
+			if(tempNode.getKey() == key) {
+				tempNode.setNext(tail);
 			}
 			tempNode = tempNode.getNext();
 		}
